@@ -1,0 +1,11 @@
+1- partições do código para maior praticidade e organização da implementação de um código.
+
+2- variáveis de uma função que representam informações trazidas de fora para possibilitar as operações.
+
+3- Com retorno e sem retorno, com parâmetros e sem parâmetros.
+
+4- Uma função sem retorno nem parâmetro, também chamada de procedimento, geralmente printamos o resultado dentro dela ou atribuímos à uma variável global para que possa ser acessada pelo resto do código.
+
+5- Por valor, na qual uma cópia do valor é fornecido à função, e por referência, na qual o endereço é fornecido, possibilitando que a função altere o valor do mesmo.
+
+6- Temos diversos tipos, como inteiros, reais, caracteres, strings, etc., expecificado no tipo da função.
