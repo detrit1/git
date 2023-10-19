@@ -1,0 +1,46 @@
+A- Na linha 21 é impresso o nome do aluno, já na 23, a variável agora é composta pela inicial deste;
+
+B-
+1- Atravás do tipo da mesma, por exemplo, caso seja uma do tipo int, deve ter retorno, já caso seja do tipo void, não terá retorno. Serão usadas para dar valor às funções. São utilizados para transportar o valor das variàveis entre funções;
+
+2- 
+"void bom_dia();
+int aleat();
+int dobro(int);
+void mostra_dobro(int);
+int main(){
+    int x, num;
+    bom_dia();
+    printf("%d", aleat());
+    x = aleat();
+    num += dobro(x);
+    if (dobro(x) > dobro(aleat())){
+        mostra_dobro(x);
+    }
+    return 0;
+}
+
+void bom_dia()
+{
+    cout << "bunndia :)" << endl;
+}
+
+int aleat()
+{
+    return 2;
+}
+
+int dobro()
+{
+    int x;
+    cin >> x;
+    x = x * 2;
+    return x;
+}
+void mostra_dobro(int x)
+{
+    cout << x << endl;
+}
+"
+
+C- A primeira retorna um número aleatório, a segunda inicializa o gerador de números aleatórios do programa, e por fim, a terceira converte uma sequência de caracteres (uma string) que representa um número inteiro em um valor inteiro.
