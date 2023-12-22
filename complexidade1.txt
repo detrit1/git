@@ -1,0 +1,59 @@
+1.
+a- A eficiência de tempo de um algoritmo representa o tempo de execução, frequentemente expresso como uma função que relaciona o tamanho do problema. A complexidade de tempo mínima é O(1), com tempo constante, enquanto a complexidade máxima é O(n^2), com tempo proporcional ao quadrado do tamanho do problema.
+
+b- A eficiência de tempo de um algoritmo pode ser afetada por diversas características físicas, como velocidade do processador, capacidade de memória e latência do disco. Contudo, na prática, programadores geralmente priorizam a complexidade de tempo expressa em funções que relacionam o tamanho do problema com o tempo de execução.
+
+c- Na prática, os programadores frequentemente empregam a eficiência de tempo de um algoritmo para descrever sua complexidade temporal. Essa eficiência é expressa por meio de notações como O(1), O(n), O(n log n) ou O(n^2), utilizando a notação big-O, que representa um limite superior assintótico da função.
+
+d- No contexto do modelo de computação, os programadores simplificam a análise e o projeto de algoritmos ao abstrair detalhes da máquina, como velocidade do processador, capacidade da memória e latência do disco. Essa abstração permite focar nas características fundamentais do algoritmo, como sua complexidade de tempo e espaço.
+
+e- Na prática, a notação big-O é extensamente empregada para descrever a complexidade temporal de algoritmos, possibilitando a comparação da eficiência entre diferentes algoritmos em termos de complexidade temporal, independentemente das peculiaridades de implementação de cada um. Exemplo prático: Considere dois algoritmos, A e B, para resolver um problema. O algoritmo A tem uma complexidade de tempo O(n), enquanto o algoritmo B tem uma complexidade de tempo O(n^2). Nesse cenário, podemos inferir que o algoritmo A é mais eficiente em termos de tempo do que o algoritmo B, pois o aumento na complexidade de tempo do algoritmo A é menor em comparação ao do algoritmo B.
+
+2.
+A Notação Big-Oh é uma maneira de descrever a complexidade temporal de um algoritmo, indicando o tempo necessário para a execução em relação ao tamanho do problema. Baseada em funções matemáticas, a notação O é empregada para expressar limites superiores assintóticos. No contexto, "Big-Oh" (representado por O) descreve a complexidade assintótica de tempo de um algoritmo em relação ao tamanho n do problema, utilizando uma função f(n). Essa notação reflete o limite superior assintótico da função f(n), representando a taxa máxima de crescimento que a função pode ter em termos de tempo de execução.
+
+3.
+O algoritmo demonstra que, independentemente dos dados ou da quantidade de memória consumida, sua complexidade de tempo varia entre no mínimo O(n^2) e no máximo O(n^2 * 2^n). A análise baseia-se em dois loops aninhados, que exploram todas as combinações possíveis de elementos na matriz x. A complexidade de tempo é determinada pela quantidade de instruções no pior caso. O primeiro loop (índice i) executa n vezes, enquanto o segundo loop (índice j) depende de i. Se for ímpar, o segundo loop é executado 2n vezes; se for par, o segundo loop é executado n vezes. A complexidade de tempo O(n^2) representa o pior caso, enquanto a O(n^2 * 2^n) representa o melhor caso, onde o segundo loop sempre é executado 2n vezes. Portanto, a complexidade de tempo do algoritmo é O(n^2).
+
+4.
+#include <iostream>
+using namespace std;
+
+int busca(const vector<int>& A, int v);
+
+int main() {
+    vetor<int> A = { /* valores */ };
+    int v;
+    cout << "insira o numero a ser procurado:";
+    cin >> v;
+
+    int resultado = busca(A, v);
+
+    if (resultado == -1) {
+        cout << "elemento não encontrado :(" << endl;
+    } else {
+        cout << "o elemento foi encontrado no indice: " << resultado << endl;
+    }
+
+    return 0;
+}
+
+int busca(const vector<int>& A, int v) {
+    for (int i = 0; i < A.size(); ++i) {
+        if (A[i] == v) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+
+
+
+
+
+
+
+
+
+
