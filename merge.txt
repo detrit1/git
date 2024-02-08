@@ -1,0 +1,54 @@
+1.
+
+v1 = {7, 5, 5, 3}:
+Chamada inicial: mergesort(v1, 0, 4)
+Divisão recursiva:
+mergesort(v1, 0, 2)
+mergesort(v1, 2, 4)
+Subdivisões:
+mergesort(v1, 0, 1)
+mergesort(v1, 2, 3)
+Intercalações:
+Intercalação de [7] e [5] -> [5, 7]
+Intercalação de [5] e [3] -> [3, 5]
+Intercalação de [5, 7] e [3, 5] -> [3, 5, 5, 7]
+
+v2 = {1, 2, 3, 4}:
+Chamada inicial: mergesort(v2, 0, 4)
+Divisão recursiva:
+mergesort(v2, 0, 2)
+mergesort(v2, 2, 4)
+Subdivisões:
+mergesort(v2, 0, 1)
+mergesort(v2, 2, 3)
+Intercalações:
+Intercalação de [1] e [2] -> [1, 2]
+Intercalação de [3] e [4] -> [3, 4]
+Intercalação de [1, 2] e [3, 4] -> [1, 2, 3, 4]
+
+v3 = {4, 3, 2, 1}:
+Chamada inicial: mergesort(v3, 0, 4)
+Divisão recursiva:
+mergesort(v3, 0, 2)
+mergesort(v3, 2, 4)
+Subdivisões:
+mergesort(v3, 0, 1)
+mergesort(v3, 2, 3)
+Intercalações:
+Intercalação de [4] e [3] -> [3, 4]
+Intercalação de [2] e [1] -> [1, 2]
+Intercalação de [3, 4] e [1, 2] -> [1, 2, 3, 4]
+
+2.
+4 chamadas recursivas e 0 trocas.
+
+
+3.
+a única alteração necessária é trocar a condição de comparação nestas funções, mantendo o restante do código inalterado. Isso garantirá que o algoritmo de mergesort ordene os valores em ordem decrescente.
+
+4.
+Após a execução da função intercala(v, 0, 4, 9) com o vetor original v = {3, 5, 6, 8, 2, 4, 6, 7, 9}, os elementos dos subvetores v[0:4] = {3, 5, 6, 8} e v[4:9] = {2, 4, 6, 7, 9} são mesclados e ordenados em ordem decrescente. Portanto, o conteúdo final do vetor v será {8, 7, 6, 6, 5, 4, 3, 2, 9}.
+
+
+
+

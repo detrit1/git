@@ -1,0 +1,73 @@
+1.
+
+Instância v1: {7, 2, 5, 4, 9}
+Passo 1:
+
+Estado inicial: {7, 2, 5, 4, 9}
+i = 1, j = 0, aux = 2
+Comparação: 2 < 7, então fazemos a troca: {2, 7, 5, 4, 9}
+Passo 2:
+
+Estado atual: {2, 7, 5, 4, 9}
+i = 2, j = 1, aux = 5
+Comparação: 5 < 7, então fazemos a troca: {2, 5, 7, 4, 9}
+Passo 3:
+
+Estado atual: {2, 5, 7, 4, 9}
+i = 3, j = 2, aux = 4
+Comparação: 4 < 7, 4 < 5, então fazemos a troca: {2, 4, 5, 7, 9}
+Passo 4:
+
+Estado atual: {2, 4, 5, 7, 9}
+i = 4, j = 3, aux = 9
+Comparação: 9 não é menor que 7, então não há troca: {2, 4, 5, 7, 9}
+Nenhum outro passo é necessário. O vetor está ordenado.
+
+Instância v2: {7, 5, 5, 3, 9}
+Passo 1:
+
+Estado inicial: {7, 5, 5, 3, 9}
+i = 1, j = 0, aux = 5
+Comparação: 5 < 7, então fazemos a troca: {5, 7, 5, 3, 9}
+Passo 2:
+
+Estado atual: {5, 7, 5, 3, 9}
+i = 2, j = 1, aux = 5
+Comparação: 5 = 5, então não há troca: {5, 5, 7, 3, 9}
+Passo 3:
+
+Estado atual: {5, 5, 7, 3, 9}
+i = 3, j = 2, aux = 3
+Comparação: 3 < 7, 3 < 5, então fazemos a troca: {3, 5, 5, 7, 9}
+Passo 4:
+
+Estado atual: {3, 5, 5, 7, 9}
+i = 4, j = 3, aux = 9
+Comparação: 9 não é menor que 7, então não há troca: {3, 5, 5, 7, 9}
+Nenhum outro passo é necessário. O vetor está ordenado.
+
+Instância v3: {1, 2, 3, 4}
+Nenhum passo é necessário, pois o vetor já está ordenado.
+
+Instância v4: {4, 3, 2, 1}
+Passo 1:
+
+Estado inicial: {4, 3, 2, 1}
+i = 1, j = 0, aux = 3
+Comparação: 3 < 4, então fazemos a troca: {3, 4, 2, 1}
+Passo 2:
+
+Estado atual: {3, 4, 2, 1}
+i = 2, j = 1, aux = 2
+Comparação: 2 < 4, então fazemos a troca: {3, 2, 4, 1}
+Em seguida, 2 < 3, então fazemos outra troca: {2, 3, 4, 1}
+Passo 3:
+
+Estado atual: {2, 3, 4, 1}
+i = 3, j = 2, aux = 1
+Comparação: 1 < 4, 1 < 3, 1 < 2, então fazemos a troca: {1, 2, 3, 4}
+Nenhum outro passo é necessário. O vetor está ordenado.
+
+2.
+
+4 comparações e 2 trocas.
